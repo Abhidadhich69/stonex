@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+     backdrop-filter: blur( 40px  );
+     -webkit-backdrop-filter: blur( 40px ); 
+    /* background-color: #0c675a; */
+    z-index: 99;
+    color: white;
+    top: 0;
+    gap: 30vw;
+}
+
+.section1 .hero-sec{
+    height: 100vh;
+     background-color: aqua;
+     width: 100vw;   
+}
+
+ video{
+    width: 100%;
+    height: 70vh;
+} 
+
+.section2 .info
+{
+    background-color: rgb(41, 39, 39);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 3vw;
+    position: sticky;
+    z-index: 90;
+}
+
+.infotxt p{
+    font-size: 1rem;
+}
+
+.section3{
+    height: 100Vh;
+    width: 100%;
+    background-image: url(220524_AI_digital_face2_GettyImages-1173158404-scaled.webp);
+    background-size: cover ;
+}
+
