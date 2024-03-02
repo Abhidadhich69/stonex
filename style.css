@@ -7,6 +7,9 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
 .section .navbar{
     display: flex;
     align-items: center;
@@ -24,6 +27,15 @@ html{
     gap: 30vw;
 }
 
+.section1-top-shadow{
+    background-color: rgb(6, 71, 60);
+    width: 100vw;
+    height: 8px;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0px 0px 50px 20px rgb(6, 71, 60);
+}
+
 .section1 .hero-sec{
     height: 100vh;
      background-color: aqua;
@@ -37,7 +49,7 @@ html{
 
 .section2 .info
 {
-    background-color: rgb(41, 39, 39);
+    background-color: rgb(17, 16, 16);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -71,30 +83,35 @@ html{
 
 .menu-bar
 {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    position: fixed;
+    z-index: 98;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 330ms ease-in-out;;
 
+}
+
+#menu-img-id{
+    position: absolute;
+    top: 0;
 }
 
 .mbar-txt{
     margin-top: 30px;
     display: flex; 
-     flex-direction: column;
+    flex-direction: column;
     gap: 1vh;
 
 }
 
 .same a{
-    color: black;
+    color: rgb(50, 50, 50);
     font-size: 2rem;
     text-decoration: none;
-}
-.menu-bar {
-    display: flex;
-    align-items: center;
 }
 
 
@@ -106,70 +123,76 @@ html{
     cursor: pointer;
   }
   
-  .border {
-    border-right: 1px solid #000; /* Just for demonstration, adjust as needed */
-  }
+
+  /* Additional styles for the background image container */
+  .m-img {
+     
+    height: 100vh;
+    width: 40vw;
+
+ background-size: cover;
+    background-repeat: no-repeat;  }
   
-  /* Define specific styles for each menu item */
+  
   .m1:hover ~ .m-img {
-    background-image: url('Mastery.webp'); /* Change to the image you want */
+    /* background-image: url('Mastery.webp');  */
+    background-color: blue;
   }
   
   .m2:hover ~ .m-img {
-    background-image: url('ICONS.webp'); /* Change to the image you want */
+    background-image: url('ICONS.webp'); /* Replace 'm2-background.jpg' with the path to your image */
   }
   
   .m3:hover ~ .m-img {
-    background-image: url('Couture.webp'); /* Change to the image you want */
+    background-image: url('Couture.webp'); /* Replace 'm3-background.jpg' with the path to your image */
   }
   
   .m4:hover ~ .m-img {
-    background-image: url('4-1.webp'); /* Change to the image you want */
+    background-image: url('4-1.webp'); /* Replace 'm4-background.jpg' with the path to your image */
   }
   
-  /* Additional styles for the background image container */
-  .m-img {
-    width: 100%; /* Adjust dimensions as needed */
-    height: 200px; /* Adjust dimensions as needed */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  
- /* .m-img
-{
+
+  .section2 {
     
-    height: 100vh;
-    width: 40vw;
-    border:2px solid black
-} */
-/*
-.m2 :hover + .m-img
-{
-    
-        background-image: url("ICONS.webp");
-    
-}
-   
-.container {
-    position: relative;
   }
   
-  .hover-div {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    margin-bottom: 10px;
+  .infotxt {
+    opacity: 0; /* Initially hide each infotxt */
   }
   
-  .background-div {
-    width: 200px;
-    height: 200px;
-    background-image: url('Mastery.webp');
-    background-size: cover;
+  /* Define animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+      opacity: 1; /* End with opacity 1 */
+    }
   }
   
-  .hover-div:hover + .background-div {
-    background-image: url('ICONS.webp');
+  /* Apply animation to each infotxt with a delay */
+  .infotxt:nth-child(2) {
+    animation: fadeIn 1s ease forwards; /* Adjust animation duration as needed */
+    animation-delay: 0.5s; /* Delay for the first infotxt */
   }
-   */
+  
+  .infotxt:nth-child(3) {
+    animation: fadeIn 1s ease forwards; /* Adjust animation duration as needed */
+    animation-delay: 1s; /* Delay for the second infotxt */
+  }
+  
+  .infotxt:nth-child(4)  {
+    animation: fadeIn 1s ease forwards; /* Adjust animation duration as needed */
+    animation-delay: 1.5s; /* Delay for the third infotxt */
+  }
+  .infotxt:nth-child(1)  {
+    animation: fadeIn 1s ease forwards; /* Adjust animation duration as needed */
+    animation-delay: 2s; /* Delay for the third infotxt */
+  }
+  
+  .page2-button{
+    animation: fadeIn 1s ease forwards; 
+    animation-delay: 2.5s;
+  }
+ 
+
