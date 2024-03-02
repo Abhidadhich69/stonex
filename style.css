@@ -11,12 +11,13 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     position: fixed;
      backdrop-filter: blur( 40px  );
      -webkit-backdrop-filter: blur( 40px ); 
     /* background-color: #0c675a; */
+    border-top: 5px solid rgb(6, 71, 60);
     z-index: 99;
     color: white;
     top: 0;
@@ -26,12 +27,12 @@ html{
 .section1 .hero-sec{
     height: 100vh;
      background-color: aqua;
-     width: 100vw;   
+     width: 100%;   
 }
 
  video{
     width: 100%;
-    height: 70vh;
+    transform: translateY(-25%);
 } 
 
 .section2 .info
@@ -51,6 +52,7 @@ html{
 
 .infotxt p{
     font-size: 1rem;
+
 }
 
 .section3{
@@ -60,3 +62,114 @@ html{
     background-size: cover ;
 }
 
+.page2-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-bar
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.mbar-txt{
+    margin-top: 30px;
+    display: flex; 
+     flex-direction: column;
+    gap: 1vh;
+
+}
+
+.same a{
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Define common styles */
+.same {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .border {
+    border-right: 1px solid #000; /* Just for demonstration, adjust as needed */
+  }
+  
+  /* Define specific styles for each menu item */
+  .m1:hover ~ .m-img {
+    background-image: url('Mastery.webp'); /* Change to the image you want */
+  }
+  
+  .m2:hover ~ .m-img {
+    background-image: url('ICONS.webp'); /* Change to the image you want */
+  }
+  
+  .m3:hover ~ .m-img {
+    background-image: url('Couture.webp'); /* Change to the image you want */
+  }
+  
+  .m4:hover ~ .m-img {
+    background-image: url('4-1.webp'); /* Change to the image you want */
+  }
+  
+  /* Additional styles for the background image container */
+  .m-img {
+    width: 100%; /* Adjust dimensions as needed */
+    height: 200px; /* Adjust dimensions as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+ /* .m-img
+{
+    
+    height: 100vh;
+    width: 40vw;
+    border:2px solid black
+} */
+/*
+.m2 :hover + .m-img
+{
+    
+        background-image: url("ICONS.webp");
+    
+}
+   
+.container {
+    position: relative;
+  }
+  
+  .hover-div {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .background-div {
+    width: 200px;
+    height: 200px;
+    background-image: url('Mastery.webp');
+    background-size: cover;
+  }
+  
+  .hover-div:hover + .background-div {
+    background-image: url('ICONS.webp');
+  }
+   */

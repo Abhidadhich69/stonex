@@ -12,3 +12,8 @@ window.addEventListener("scroll", () => {
   parallax3.style.backgroundPositionY = offset * 0.7 + "px";
 
 });
+
+document.getElementById("page2-button-id").addEventListener('click', () => {
+    window.scrollBy(0, window.innerHeight);   
+})
+
